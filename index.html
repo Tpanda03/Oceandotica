@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ocenadotica Studio | Dot art by Rashmi</title>
+  <meta name="description" content="Ocenadotica Studio by Rashmi. Original artwork and fine art prints inspired by the ocean, created one dot at a time.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="site-header">
+    <a class="brand" href="#top">Ocenadotica Studio</a>
+    <nav aria-label="Main">
+      <a href="#collections">Collections</a>
+      <a href="#buy">Originals and prints</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="ripple" aria-hidden="true"></canvas>
+      <div class="hero-text">
+        <h1>Ocenadotica Studio</h1>
+        <p class="byline">By Rashmi</p>
+        <p class="tagline">Inspired by the ocean, created one dot at a time.</p>
+        <a class="button" href="#collections">See the collections</a>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTIONS / GALLERY ============ -->
+    <!-- The artwork shown here comes from artworks.js. Edit that file to add pictures. -->
+    <section class="section" id="collections">
+      <h2>Collections</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter artwork by collection"></div>
+      <p class="collection-note" id="collection-note"></p>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- ============ ORIGINALS AND PRINTS ============ -->
+    <section class="section buy" id="buy">
+      <h2>Originals and prints</h2>
+      <div class="buy-columns">
+        <div>
+          <h3>Original artwork</h3>
+          <p>Each original is painted by hand, dot by dot, and there is only one of each. Email to ask which pieces are available.</p>
+          <a class="text-link" href="mailto:Rtailor@sbcglobal.net?subject=Original%20artwork%20inquiry">Ask about an original</a>
+        </div>
+        <div>
+          <h3>Fine art prints</h3>
+          <p>Selected pieces from every collection are available as fine art prints. Email with the title you like and the size you have in mind.</p>
+          <a class="text-link" href="mailto:Rtailor@sbcglobal.net?subject=Fine%20art%20print%20inquiry">Ask about a print</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <h2>About the studio</h2>
+      <!-- Replace this paragraph with Rashmi's own story. -->
+      <p>Ocenadotica Studio is the work of Rashmi, who paints the ocean one dot at a time. Sea turtles, seahorses and jellyfish take shape slowly, each one built from thousands of small points of color.</p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <h2>Contact</h2>
+      <p>For originals, prints and commissions, get in touch with Rashmi.</p>
+      <dl>
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:Rtailor@sbcglobal.net">Rtailor@sbcglobal.net</a></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/rashmi.tailor11/" target="_blank" rel="noopener">@rashmi.tailor11</a></dd>
+        </div>
+        <div>
+          <dt>Facebook</dt>
+          <!-- TODO: replace the href with the real Facebook profile or page link. -->
+          <dd><a href="https://www.facebook.com/" target="_blank" rel="noopener">Rashmi Tailor</a></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Ocenadotica Studio, by Rashmi. All artwork &copy; <span id="year"></span> Rashmi Tailor.</p>
+  </footer>
+
+  <!-- ============ LARGE VIEW (opens when a picture is clicked) ============ -->
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <button class="close" id="viewer-close" aria-label="Close">&times;</button>
+    <div class="viewer-art" id="viewer-art"></div>
+    <div class="viewer-info">
+      <h3 id="viewer-title"></h3>
+      <p id="viewer-details"></p>
+      <a class="button" id="viewer-inquire" href="#">Ask about this piece</a>
+    </div>
+  </dialog>
+
+  <script src="artworks.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
