@@ -134,9 +134,8 @@ img { display: block; max-width: 100%; }
 .collection-note { min-height: 1.6em; color: var(--tide); margin-bottom: 2rem; }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
-  gap: 2.5rem 2rem;
+  columns: 17rem;
+  column-gap: 2rem;
 }
 .piece {
   font: inherit;
@@ -148,14 +147,16 @@ img { display: block; max-width: 100%; }
   cursor: zoom-in;
   display: block;
   width: 100%;
+  margin: 0 0 2.5rem;
+  break-inside: avoid;
 }
+/* pictures keep their own shape, so nothing is cropped */
 .piece-art {
   display: block;
-  aspect-ratio: 4 / 5;
   background: var(--shallows);
   overflow: hidden;
 }
-.piece-art img, .piece-art svg { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.piece-art img, .piece-art svg { width: 100%; height: auto; transition: transform 0.4s ease; }
 .piece:hover .piece-art img, .piece:hover .piece-art svg { transform: scale(1.03); }
 .piece-title { display: block; font-family: var(--font-display); font-size: 1.2rem; color: var(--lagoon); margin-top: 0.85rem; }
 .piece-details { display: block; font-size: 0.95rem; opacity: 0.8; }

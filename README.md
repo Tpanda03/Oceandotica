@@ -34,4 +34,4 @@ To preview on your own computer, open `index.html` in a browser.
 
 - The Facebook link in `index.html` points to facebook.com. Replace it with the real profile or page address.
 - The "About the studio" paragraph is starter text.
-- Artwork titles and details in `artworks.js` are placeholders.
+- Artwork titles in `artworks.js` are working titles, and the details (medium, size, availability) are empty.
