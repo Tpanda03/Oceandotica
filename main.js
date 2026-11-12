@@ -4,6 +4,10 @@
 (function () {
   "use strict";
 
+  /* The deploy step replaces this with the current version, so browsers
+     fetch fresh files after every update instead of using old saved copies. */
+  var BUILD = "__BUILD__";
+
   var DOT_COLORS = ["#14808a", "#f2b544", "#d5e8e4", "#f3a5a0", "#5fb7b5"];
 
   /* ---------- dotted placeholder, shown until a real picture is added ---------- */
@@ -32,7 +36,7 @@
 
   function artMarkup(work, index) {
     if (work.image) {
-      return '<img src="' + work.image + '" alt="' + work.title.replace(/"/g, "&quot;") + '" loading="lazy">';
+      return '<img src="' + work.image + '?v=' + BUILD + '" alt="' + work.title.replace(/"/g, "&quot;") + '" loading="lazy">';
     }
     return placeholder(index + 1);
   }
