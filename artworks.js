@@ -85,7 +85,7 @@ const ARTWORKS = [
   { title: "Geometric",              collection: "more",      image: "images/geometric.jpg",             details: "" },
   { title: "Dancer",                 collection: "more",      image: "images/dancer.jpg",                details: "" },
   { title: "Palm Reflection",        collection: "more",      image: "images/palm-reflection.jpg",       details: "" },
-  { title: "Untitled, Green",        collection: "more",      image: "images/green-study.jpg",           details: "" },
+  { title: "Ganesh",                 collection: "more",      image: "images/ganesh.jpg",                details: "" },
   { title: "Family Board",           collection: "more",      image: "images/family-board.jpg",          details: "" },
   { title: "Love",                   collection: "more",      image: "images/love-sign.jpg",             details: "" },
   { title: "Family",                 collection: "more",      image: "images/family-sign.jpg",           details: "" }
